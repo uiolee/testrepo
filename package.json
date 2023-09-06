@@ -1,0 +1,46 @@
+{
+  "name": "hexo-symbols-count-time-2",
+  "version": "2.0.0-0",
+  "description": "Symbols count and time to read for articles.",
+  "keywords": [
+    "hexo",
+    "count",
+    "symbols",
+    "time-to-read"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uiolee/hexo-symbols-count-time-2.git"
+  },
+  "license": "LGPL-3.0",
+  "author": "Ivan.Nginx <ivan.nginx@gmail.com> (https://almostover.ru)",
+  "main": "index",
+  "files": [
+    "lib",
+    "index.js"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "jest",
+    "test:cov": "jest --coverage --coverageReporters=html text",
+    "test:lcov": "jest --coverage --coverageReporters=lcovonly text"
+  },
+  "devDependencies": {
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-jest": "^27.2.3",
+    "eslint-plugin-prettier": "^5.0.0",
+    "jest": "^29.6.4",
+    "prettier": "^3.0.2"
+  },
+  "peerDependencies": {
+    "hexo-util": "^3.0||^2.7||>=1.9.1"
+  },
+  "peerDependenciesMeta": {
+    "hexo-util": {
+      "optional": false
+    }
+  },
+  "packageManager": "pnpm@8"
+}
