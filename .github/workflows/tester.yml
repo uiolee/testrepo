@@ -1,0 +1,27 @@
+name: tester
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "**.jsx?"
+      - "**.tsx?"
+      - "lib/**"
+      - "test/**"
+      - "package.json"
+      - ".github/workflows/tester.yml"
+  pull_request:
+    paths:
+      - "**.jsx?"
+      - "**.tsx?"
+      - "lib/**"
+      - "test/**"
+      - "package.json"
+      - ".github/workflows/tester.yml"
+
+env:
+  CI: true
+
+jobs:
+  test:
+    uses: uiolee/workflows/.github/workflows/test.yml@main

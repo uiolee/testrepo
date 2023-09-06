@@ -1,0 +1,23 @@
+name: linter
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "**.jsx?"
+      - "**.tsx?"
+      - "lib/**"
+      - "test/**"
+      - ".github/workflows/linter.yml"
+  pull_request:
+    paths:
+      - "**.jsx?"
+      - "**.tsx?"
+      - "lib/**"
+      - "test/**"
+      - ".github/workflows/linter.yml"
+
+jobs:
+  lint:
+    uses: uiolee/workflows/.github/workflows/lint.yml@main
+
